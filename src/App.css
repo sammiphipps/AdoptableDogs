@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+form {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form > label, form > button {
+  font-size: 1.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form > input {
+  width: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-output {
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-dogs-container, .adoptable-dogs-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-dogs-container > h2, .adoptable-dogs-container > h2{
+  align-self: center;
+}
+
+.dogs-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dog-card {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  width: 30%;
+  margin: 1%;
+  align-items:center;
+}
+
+.dog-card > div:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container{
+  align-self: flex-end
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteButton {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none; 
+  outline: none; 
+  cursor: pointer;
+}
+
+.dog-card > img {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+}
+
+.dog-card > div > img {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
 }
